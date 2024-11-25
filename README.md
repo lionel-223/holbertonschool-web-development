@@ -1,4 +1,5 @@
 HTML Project - Introduction to HTML Basics
+
 Description
 
 This repository contains the exercises I am working on to learn the fundamentals of HTML. My goal is to understand how HTML works, create web pages from wireframes, and explore important concepts like tags, attributes, and the DOM.
