@@ -1,0 +1,43 @@
+/* Style général */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Style du header */
+header {
+    display: flex; /* Utilisation de Flexbox */
+    justify-content: space-between; /* Sépare les éléments à gauche et à droite */
+    align-items: center; /* Centre verticalement les éléments */
+    padding: 10px 20px; /* Ajoute un peu d'espace autour du contenu */
+    background-color: #f8f8f8; /* Couleur de fond légère */
+    border: 2px solid black; /* Pour représenter le contour du header */
+}
+
+/* Logo */
+#logo {
+    font-size: 1.5em; /* Taille du texte du logo */
+    font-weight: bold; /* Met en gras le texte du logo */
+    border: 2px solid red; /* Contour rouge pour correspondre au wireframe */
+    padding: 10px; /* Ajoute un peu d'espace autour du texte */
+}
+
+/* Navigation */
+nav ul {
+    display: flex; /* Place les liens horizontalement */
+    list-style: none; /* Supprime les puces des listes */
+    margin: 0; /* Supprime la marge par défaut */
+    padding: 0; /* Supprime le padding par défaut */
+}
+
+nav ul li {
+    margin-left: 15px; /* Ajoute de l'espace entre les liens */
+}
+
+nav ul li a {
+    text-decoration: none; /* Supprime le soulignement */
+    color: black; /* Couleur du texte */
+    padding: 10px 15px; /* Ajoute de l'espace autour des liens */
+    border: 2px solid red; /* Contour rouge pour correspondre au wireframe */
+    display: inline-block; /* Assure que les liens respectent les marges et paddings */
+}
