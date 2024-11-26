@@ -1,16 +1,15 @@
-/* Style général */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
 
-/* Style du header */
+/* header */
 header {
     display: flex; /* Utilisation de Flexbox */
     justify-content: space-between; /* Sépare les éléments à gauche et à droite */
     align-items: center; /* Centre verticalement les éléments */
     padding: 10px 20px; /* Ajoute un peu d'espace autour du contenu */
-    background-color: #f8f8f8; /* Couleur de fond légère */
+    background-color: #0c7e74; /* Couleur de fond */
     border: 2px solid black; /* Pour représenter le contour du header */
 }
 
