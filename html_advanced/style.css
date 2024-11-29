@@ -1,23 +1,29 @@
 body {
-    margin: 0;
+    display: flex;
+    flex-direction: column; /* Organise les sections verticalement */
+    align-items: center;
+    width: 98%;
+    height: 90%;
     font-family: Arial, sans-serif;
+    border: 3px solid black; /* Pour représenter le contour du header */
+
 }
 
 /* header */
 header {
+    margin: 5px 10px;
     display: flex; /* Utilisation de Flexbox */
     justify-content: space-between; /* Sépare les éléments à gauche et à droite */
     align-items: center; /* Centre verticalement les éléments */
-    padding: 10px 20px; /* Ajoute un peu d'espace autour du contenu */
-    background-color: #0c7e74; /* Couleur de fond */
+    padding: 5px 10px; /* Ajoute un peu d'espace autour du contenu */
     border: 2px solid black; /* Pour représenter le contour du header */
+    width: 97%; /* Limite la largeur pour un meilleur centrage */
 }
 
 /* Logo */
 #logo {
     font-size: 1.5em; /* Taille du texte du logo */
     font-weight: bold; /* Met en gras le texte du logo */
-    border: 2px solid red; /* Contour rouge pour correspondre au wireframe */
     padding: 10px; /* Ajoute un peu d'espace autour du texte */
 }
 
@@ -40,3 +46,226 @@ nav ul li a {
     border: 2px solid red; /* Contour rouge pour correspondre au wireframe */
     display: inline-block; /* Assure que les liens respectent les marges et paddings */
 }
+
+main {
+    width: 98%; /* Limite la largeur pour un meilleur centrage */
+    margin: 10px auto;
+    display: flex; /* Place les liens horizontalement */
+    align-items: center; /* Centre verticalement les éléments */
+    flex-direction: column;
+    border: 2px solid black; /* Ajoute une bordure pour délimiter */
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-align: center; /* Centre le texte à l'intérieur */
+    gap: 20px; /* Ajoute de l'espace entre chaque éléments */
+
+}
+
+main .bloc_1 {
+    border: 2px solid black; /* Ajoute une bordure pour délimiter */
+}
+
+main .bloc_1 * {
+    margin: 5px 2.5px;
+}
+
+main .bloc_2 {
+    width: 85%; /* Limite la largeur pour un meilleur centrage */
+    border: 2px solid black; /* Ajoute une bordure pour délimiter */
+    padding: 5px;
+}
+
+
+main .bloc_2 > :first-child {
+    width: fit-content;
+    margin: auto auto; /* Centre le conteneur .items dans son parent */
+}
+
+main .bloc_2 .items {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto; /* Centre le conteneur .items dans son parent */
+    margin-bottom: 0px;
+    padding: 5px;
+    padding-right: 5%;
+
+}
+
+main .bloc_2 .item {
+    width: 30%;
+    text-align: center; /* Centre le contenu textuel des items */
+    margin-right: auto;
+    margin-left: 5%;
+}
+quote {
+    width: 45%;
+    display: flex;
+    justify-content: space-between; /* Place l'image et le contenu aux extrémités */
+    align-items: flex-start; /* Aligne les éléments au haut du conteneur */ 
+    padding: 10px;
+    border: 2px solid black; /* Ajoute une bordure pour délimiter */
+}
+
+quote img {
+    height: auto;
+    margin-right: 5px;
+
+}
+
+quote div {
+    margin-left: 5px;
+    padding: 5px;
+    border: 2px solid black; /* Ajoute une bordure pour délimiter */
+}
+
+section {
+    width: 98%; /* Limite la largeur pour un meilleur centrage */
+    margin: 10px auto;
+    display: flex; /* Place les liens horizontalement */
+    align-items: center; /* Centre verticalement les éléments */
+    flex-direction: column;
+    border: 2px solid black; /* Ajoute une bordure pour délimiter */
+    padding-bottom: 5px;
+    text-align: center; /* Centre le texte à l'intérieur */
+    gap: 20px; /* Ajoute de l'espace entre chaque éléments */
+}
+
+section > :first-child {
+    width: fit-content;
+    margin-bottom: 0px;
+    margin-top: 20px; /* Centre le conteneur .items dans son parent */
+}
+
+section .items {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    padding-right: 2.5%;
+    margin: 10px 10px;
+}
+
+section .item {
+    width: 30%;
+    text-align: center; /* Centre le contenu textuel des items */
+    margin-right: auto;
+    margin-left: 2.5%;
+}
+
+.item div {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid black; /* Ajoute une bordure pour délimiter */
+}
+
+.item div img .div {
+    justify-content: space-between;
+}
+
+section div {
+    border: 2px solid black; /* Ajoute une bordure pour délimiter */
+    width: fit-content;
+    padding: 5px;
+}
+
+section .sous_div1, .sous_div2 {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+    gap : 5px
+}
+
+section :has(.sous_div) {
+    display: flex;
+    flex-direction: column;
+}
+
+footer > div:first-child {
+    margin: 10px 10px; /* Supprime la marge par défaut */
+    display: flex; /* Utilisation de Flexbox */
+    padding: 5px;
+    justify-content: space-between; /* Sépare les éléments à gauche et à droite */
+    align-items: center; /* Centre verticalement les éléments */
+    width: 98%; /* Limite la largeur pour un meilleur centrage */
+}
+
+footer {
+    display: flex; /* Place les liens horizontalement */
+    align-items: center; /* Centre verticalement les éléments */
+    flex-direction: column;
+    border: 2px solid black; /* Pour représenter le contour du header */
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 98%; /* Limite la largeur pour un meilleur centrage */
+}
+
+footer div {
+    margin: 0px 0px; /* Supprime la marge par défaut */
+    padding: 5px;
+    border: 2px solid black; /* Ajoute une bordure pour délimiter */
+}
+
+footer div > :has(a) {
+    display: flex; /* Place les liens horizontalement */
+    margin: 0px 0px;
+}
+
+footer p {
+    width: fit-content;
+}
+
+footer a {
+    margin: 2.5px 5px;
+}
+
+
+
+
+img {
+    border: 2px solid #69d269;
+    margin: 2.5px 5px;
+}
+
+p{
+    border: 2px solid #8b30c3;
+}
+
+blockquote {
+    border: 1px solid #fc34fd;
+}
+
+
+button {
+    border: 2px solid #d5a865;
+}
+
+a {
+    border: 2px solid red;
+    text-decoration: none;
+}
+
+.item {
+    border: 1px solid black; /* Ajoute une bordure pour délimiter */
+}
+
+.item * {
+    margin: 2.5px 5px;
+}
+
+.items {
+    border: 2px solid black; /* Ajoute une bordure pour délimiter */
+}
+
+main {
+    border: 2px solid black; /* Ajoute une bordure pour délimiter */
+}
+
+a:has(img) {
+    padding: 10px;
+}
+
+h1, h2, h3, h4 {
+    border: 2px solid #6f92cd;
+}
+  
+
+
