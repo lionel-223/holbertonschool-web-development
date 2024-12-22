@@ -1,0 +1,473 @@
+body {
+    display: flex;
+    flex-direction: column; /* Organise les sections verticalement */
+    align-items: center;
+    width: 1440px;
+    height: 3718px;
+    margin: 0 auto; /* Centre horizontalement */
+    font-family: Source Sans Pro, sans-serif;
+
+}
+
+/* header */
+header {
+    margin: 35px 10px;
+    display: flex; /* Utilisation de Flexbox */
+    justify-content: space-between; /* Sépare les éléments à gauche et à droite */
+    align-items: center; /* Centre verticalement les éléments */
+    padding: 5px 10px; /* Ajoute un peu d'espace autour du contenu */
+    width: 1103.41px;
+    height: 29.46;
+}
+
+/* Logo */
+#logo {
+    font-size: 1.5em; /* Taille du texte du logo */
+    font-weight: bold; /* Met en gras le texte du logo */
+}
+
+#logo a img {
+    display: inline-block;
+    margin: 0px;
+}
+
+
+
+/* Navigation */
+nav ul {
+    display: flex; /* Place les liens horizontalement */
+    list-style: none; /* Supprime les puces des listes */
+    margin: 0; /* Supprime la marge par défaut */
+    padding: 0; /* Supprime le padding par défaut */
+}
+
+nav ul li {
+    margin-left: 15px; /* Ajoute de l'espace entre les liens */
+}
+
+nav ul li a {
+    text-decoration: none; /* Supprime le soulignement */
+    margin: 5px 2.5px;
+    font-family: Source Sans Pro, sans-serif;
+    font-weight: bold;
+    color: #FFFFFF;
+    font-size: 12px;
+    padding: 10px 15px; /* Ajoute de l'espace autour des liens */
+    display: inline-block; /* Assure que les liens respectent les marges et paddings */
+}
+
+main {
+    width: 1440px;
+    height: 1093px;
+    margin: 10px auto;
+    display: flex; /* Place les liens horizontalement */
+    align-items: center; /* Centre verticalement les éléments */
+    flex-direction: column;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-align: center; /* Centre le texte à l'intérieur */
+    gap: 20px; /* Ajoute de l'espace entre chaque éléments */
+    background-image: url('assets/background.png');
+
+}
+
+main .bloc_1 {
+    margin: 80px auto; 
+}
+
+main .bloc_1 h1{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 120px;
+    text-align: center;
+    /*letter-spacing: 2px;*/
+}
+
+button{
+    font-family: 'Source Sans Pro', sans-serif;
+    height: 44px;
+    width: 162px;
+    font-size: 10px;
+    text-align: center;
+    border-radius: 60px;
+    border: 0px;
+    color: #FFFFFF;
+    background-color: #C271FF;
+    box-shadow: 0px 2px 20px 10px rgba(0, 0, 0, 0.25);
+    /*letter-spacing: 2px;*/
+}
+
+main .bloc_2 h2{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: light;
+    font-size: 32px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 0px;
+    /*letter-spacing: 2px;*/
+}
+
+span {
+    font-weight: bold;
+    color: #C271FF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+main .bloc_1 pre{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 36px;
+    text-align: center;
+    /*letter-spacing: 2px;*/
+}
+
+main .bloc_1 * {
+    margin: 5px 2.5px;
+    font-family: Source Sans Pro;
+    color: #FFFFFF;
+}
+
+main .bloc_2 {
+    margin-top: 27px;
+    padding: 5px;
+}
+
+
+main .bloc_2 > :first-child {
+    width: fit-content;
+    margin: auto auto; /* Centre le conteneur .items dans son parent */
+}
+
+main .bloc_2 .items {
+    display: flex;
+    justify-content: space-between;
+    margin: 94px auto; /* Centre le conteneur .items dans son parent */
+    margin-bottom: 0px;
+    padding: 5px;
+    padding-right: 5%;
+    color: #FFFFFF;
+    gap: 137px;
+}
+
+main .bloc_2 .items h3{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    font-style: black;
+}
+
+main .bloc_2 .items .item p{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    font-style: italic;
+}
+
+main .bloc_2 .item {
+    width: 30%;
+    text-align: center; /* Centre le contenu textuel des items */
+}
+quote {
+    position: relative;
+    font-family: 'Source Sans Pro', sans-serif;
+    display: flex;
+    margin-top: -20px;
+    width: 1440px;
+    height: 392px;
+    background-color: #C271FF;  
+    color: #FFFFFF;  
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 53px;
+}
+
+img.background-image {
+    border-radius: 10px;
+}
+
+
+blockquote {
+    font-weight: regular;
+    height: auto;
+    margin-right: 5px;
+}
+
+quote p {
+    font-style: italic;
+    height: auto;
+    margin-right: 5px;
+}
+
+quote p:first-of-type {
+    font-style: normal;
+    font-weight: bold;
+    height: auto;
+    margin-right: 5px;
+}
+
+quote div {
+    margin-left: 5px;
+    padding: 5px;
+}
+
+section {
+    width: 98%; /* Limite la largeur pour un meilleur centrage */
+    margin: 10px auto;
+    display: flex; /* Place les liens horizontalement */
+    align-items: center; /* Centre verticalement les éléments */
+    flex-direction: column;
+    padding-bottom: 5px;
+    text-align: center; /* Centre le texte à l'intérieur */
+    gap: 20px; /* Ajoute de l'espace entre chaque éléments */
+}
+
+section > :first-child {
+    width: fit-content;
+    margin-bottom: 0px;
+    margin-top: 20px; /* Centre le conteneur .items dans son parent */
+}
+
+section .items {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    margin: 10px 10px;
+}
+
+section .item {
+    width: 30%;
+    text-align: center; /* Centre le contenu textuel des items */
+    margin-right: auto;
+}
+
+.smile {
+    margin-top: 86px;
+}
+
+.smile .items {
+    gap : 36px;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.smile .item {
+    text-align: left;
+}
+
+.smile h1 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 20;
+    font-size: 32px;
+    margin-top: 0px;
+    margin-bottom: 65px;
+}
+
+.smile h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 10px 15px;
+}
+
+.smile h3 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #C271FF;
+    margin: 10px 15px;
+}
+
+.smile .item div:nth-of-type(2) p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #C271FF;
+    margin: 10px 15px;
+}
+
+.smile p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    color: #56595d81;
+    margin: 10px 15px;
+}
+
+.membership {
+    width: 1440px;
+    height: 502px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #FFFFFF;
+    background: #071629;
+    padding-bottom: 50px;
+}
+
+.membership span {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    color: #C271FF;
+    background: #071629;
+}
+
+.membership h1 {
+    margin-top: 83px;
+    margin-bottom: 43px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 50;
+    font-size: 32px;
+    color: #FFFFFF;
+    background: #071629;
+}
+
+.membership h3 {
+    margin-top: 43px;
+    margin-bottom: 23px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.membership P {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.faq {
+    padding-top: 85px;
+    margin-top: 0px;
+}
+
+.faq h1 {
+    margin-top: 0px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: normal;
+    font-size: 60px;
+    color: #000000;
+}
+
+.faq h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: left;
+    color: #575858f8;
+}
+
+.faq P {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 50;
+    font-size: 14px;
+    text-align: left;
+    color: #071629;
+}
+
+.membership .items {
+    width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 75px;
+}
+
+.membership item {
+    padding-top: 0px;
+    margin-top: 0px;
+    width: 257px;
+    height: 153px;
+}
+
+.item div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item div img .div {
+    justify-content: space-between;
+}
+
+section div {
+    width: fit-content;
+    padding: 5px;
+}
+
+section .sous_div1, .sous_div2 {
+    display: flex;
+    justify-content: space-between;
+    gap : 200px
+}
+
+section :has(.sous_div) {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    width: 100%;
+    max-width: 1440px;
+    height: 249px;
+    background: #071629;
+    display: flex; /* Alignement flexible */
+    flex-direction: column; /* Empile verticalement */
+    align-items: center; /* Centre horizontalement */
+    justify-content: center; /* Centre verticalement */
+    padding: 20px 0;
+    margin-top: 36px;
+}
+
+footer div:first-child {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    gap: 736px;
+}
+
+footer .link {
+    display: flex; /* Les icônes sociales en ligne */
+    gap: 10px; /* Espacement uniforme entre les liens */
+}
+
+footer #logo1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+footer .link img {
+    width: 24px; /* Taille des icônes sociales */
+    height: auto;
+}
+
+footer p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 50;
+    font-size: 12px;
+    margin-top: 70px;
+    color: #ffffff; /* Texte blanc */
+}
+
+
+img {
+    margin: 2.5px 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.item * {
+    margin: 2.5px 5px;
+}
+
+  
+
+
